@@ -1,0 +1,214 @@
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
+  text-decoration: none;
+  font-style: none;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 30% auto;
+  column-gap: 60px;
+  padding: 40px;
+  background: linear-gradient(to right, #520600, #5e3b40);
+  color: var(--text-color);
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.profile > .profile-image {
+  width: 128px;
+  height: 128px;
+  border: 2px solid #700901;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.profile > .name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.profile > .occupation {
+  font-size: 1rem;
+}
+
+.about-me-container {
+  padding: 30px 40px;
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.about-me-container > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.about-me-container > p {
+  font-size: 1rem;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 40px;
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.contacts > a {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.contacts > a > i {
+  font-size: 1.3rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 35px 20px;
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.skills-container > h1 {
+  font-size: 1.5rem;
+}
+
+.skills-container > .skills {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-bottom: 15px;
+}
+
+.skills-container > .skills > .skill {
+  min-width: 86px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 0;
+  background-color: var(--bg-techs);
+  color: #000000;
+  border-radius: 30px;
+}
+
+.education {
+  padding: 30px 20px;
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.education > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.education > .items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 30px;
+}
+
+.education > .items > .item {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.projects-container > h1 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  padding: 30px 20px 20px 20px;
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.projects-container > h1 > a {
+  font-size: 0.8rem;
+  text-align: end;
+  color: var(--text-color);
+}
+
+.projects-container > .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-content: center;
+}
+
+.projects-container > .projects > .item-project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px;
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.projects-container > .projects > .item-project > a > #title {
+  color: var(--text-color);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.projects-container > .projects > .item-project > a {
+  color: aliceblue;
+}
+
+.projects-container > .projects > .item-project > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-container > .projects > .item-project > div > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
